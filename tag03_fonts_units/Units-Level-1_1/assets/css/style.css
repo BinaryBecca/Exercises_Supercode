@@ -1,0 +1,29 @@
+.cat1 {
+    width: 400px;
+    height: auto;
+}
+
+.cat2 {
+  width: 50%;
+  height: auto;
+}
+
+.cat3 {
+  width: 20em;
+  height: auto;
+}
+
+.cat4 {
+  width: 40rem;
+  height: auto;
+}
+
+.cat5 {
+  width: 35vw;
+  height: auto;
+}
+
+.cat6 {
+  width: auto;
+  height: vh;
+}

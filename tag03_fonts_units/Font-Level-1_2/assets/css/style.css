@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 60px;
+}
+
+@font-face {
+    font-family: "ChelseaMarket";
+    src: url("../fonts/ChelseaMarket.ttf");
+}
+@font-face {
+    font-family: "Fredoka";
+    src: url("../fonts/Fredoka.ttf");
+}
+@font-face {
+    font-family: "Pacifico";
+    src: url("../fonts/Pacifico.ttf");
+}
+@font-face {
+    font-family: "PressStart2P";
+    src: url("../fonts/PressStart2P.ttf");
+}
+
+body {
+    padding: 2rem 10rem;
+}
+
+h1 {
+    font-family: "PressStart2P";
+    background: #39FF14;
+    font-size: 60px;
+    line-height: 1.5;
+    text-align: center;
+    padding: 0 10rem;
+    margin-top: 1rem;
+}
+
+p {
+    font-size: 50px;
+    font-family: "Pacifico";
+    margin-top: 1rem;
+}
+
+.highlight {
+    text-shadow: 4px 0 3px red;
+}
+
+.small {
+    font-family: "ChelseaMarket";
+    font-size: 30px;
+}
+
+.click {
+    font-family: "Fredoka";
+    font-weight: bold;
+    font-size: 40px;
+}

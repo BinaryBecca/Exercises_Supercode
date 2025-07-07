@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Bitcount-Schrift";
+    src: url("../fonts/BitcountGridDouble.ttf");
+}
+
+html {
+    height: 100%;
+    font-size: 60px;
+    /* font-size: 14px; */
+}
+
+body {
+    height: 100vh;
+    background-image: url("../img/doctorwho.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main {
+    padding: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    text-align: center;
+}
+
+h1{
+    font-family: "Bitcount-Schrift", sans-serif;
+    font-size: 2rem;
+    text-shadow: 0 0 10px orange;
+    padding: 0 15%;
+    margin-bottom: 1rem;
+}
+
+article {
+    padding: 2%;
+    margin: 0 100px;
+    border-radius: 5rem;
+    background-color: rgba(60, 30, 0, 0.5);
+    line-height: 1.2;
+}
+
+h2 {
+    font-family: "Bitcount-Schrift", sans-serif;
+    font-size: 1.5em;
+} 
+

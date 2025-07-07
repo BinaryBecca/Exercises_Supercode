@@ -1,0 +1,30 @@
+ul {
+    list-style: none;
+    background-color: gray;
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+}
+
+ul a, .orange1 {
+    color: orangered;
+}
+
+.orange2 {
+    color: orange;
+}
+
+.Bild1 {
+    width: 400px;
+    height: 400px;
+}
+
+.Bild2 {
+    width: 600px;
+    height: 600px;
+}
+
+.Bild3 {
+    width: 800px;
+    height: 600px;
+}

@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 40px;
+}
+
+body {
+    text-align: center;
+    font-size: 2vw;
+    padding: 2% 15%;
+}
+
+@font-face {
+    font-family: "Anton-Regular";
+    src: url("../fonts/Anton-Regular.ttf");
+}
+@font-face {
+    font-family: "ApfelGrotezk-Fett";
+    src: url("../fonts/ApfelGrotezk-Fett.otf");
+}
+@font-face {
+    font-family: "BitcountGridDouble";
+    src: url("../fonts/BitcountGridDouble.ttf");
+}
+@font-face {
+    font-family: "DancingScript";
+    src: url("../fonts/DancingScript.ttf");
+}
+@font-face {
+    font-family: "Sinistre-Bold";
+    src: url("../fonts/Sinistre-Bold.otf");
+}
+
+h1 {
+    font-family: "Anton-Regular";
+    background-color: #5C3CDC;
+    color: #4FEBAC;
+    border-radius: 1rem;
+}
+
+.font1 {
+    font-family: "ApfelGrotezk-Fett";
+    color: #5C3CDC;
+}
+.font2 {
+    font-family: "BitcountGridDouble";
+    color: #5C3CDC;
+}
+.font3 {
+    font-family: "DancingScript";
+    background-color: #4FEBAC;
+    color: #5C3CDC;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.font4 {
+    font-family: "Sinistre-Bold";
+    color: #5C3CDC;
+}
+
+.font5 {
+    font-style: italic;
+    background-color: #5C3CDC;
+    color: #4FEBAC;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+h1, .font1, .font2, .font3, .font4 {
+    margin-bottom: 1rem;
+}
