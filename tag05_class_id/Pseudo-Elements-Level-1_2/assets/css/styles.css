@@ -1,0 +1,93 @@
+/*
+- Benutze diese Farben:
+    - #a020f0
+    - #00bfff
+    - #32cd32
+    - #c71585
+    - #00ced1
+    - #483d8b
+    - #2e8b57
+- Benutze diese Befehle:
+    - ::first-line
+    - ::first-letter
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.green_letter::first-letter {
+  color: #2e8b57;
+  font-size: 40px;
+}
+
+h3 {
+  margin-bottom: 20px;
+}
+
+body li {
+  margin-left: 30px;
+}
+
+.blue_letter::first-letter {
+  color: #00ced1;
+  font-size: 30px;
+  text-decoration: overline;
+}
+
+.pink_letter::first-letter {
+  color: #c71585;
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+.lightgreen_letter::first-letter {
+  color: #32cd32;
+  font-size: 30px;
+  text-decoration: line-through;
+}
+
+ul li:nth-of-type(3) {
+  text-decoration: line-through grey;
+}
+
+.red_letter::first-letter {
+  color: red;
+}
+
+.darkgreen_p {
+  color: #2e8b57;
+  margin: 20px 0;
+  font-size: 18px;
+  /* !!!!!!!! */
+  text-indent: 40px;
+}
+
+.darkgreen_p_text2 {
+  font-size: 14px;
+}
+
+.red_letter::first-letter {
+  color: red;
+  font-size: 30px;
+}
+
+.red_letter {
+  margin-bottom: 20px;
+}
+
+.big {
+  font-size: 23px;
+}
+
+.green_text {
+  color: #32cd32;
+}
