@@ -1,0 +1,55 @@
+html {
+  font-size: 14px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 1vh 1vw;
+}
+
+fieldset {
+  padding: 2vh 2vw;
+}
+
+label {
+  display: inline-block;
+  width: 140px;
+  text-align: left;
+}
+
+.radio_elements {
+  display: initial;
+  width: initial;
+}
+
+label,
+input,
+.gender_section,
+.activity_section {
+  margin-bottom: 1vh;
+}
+
+.radio_elements {
+  margin-right: 2px;
+}
+
+#country {
+  width: 80px;
+}
+
+button {
+  padding: 0 4px;
+}
+
+.languages__section label,
+.languages__section select {
+  vertical-align: middle;
+  margin-bottom: 1vh;
+}
+
+#cancel__btn

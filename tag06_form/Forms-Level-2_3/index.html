@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms-Level-1_1</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+
+  <body>
+    <fieldset>
+      <legend>Register form</legend>
+
+      <section class="name_section">
+        <div>
+          <label for="name">Name</label>
+          <input type="text" name="" id="name" placeholder="Name" />
+        </div>
+      </section>
+
+      <section class="surname_section">
+        <div>
+          <label for="surname">Surname</label>
+          <input type="text" name="" id="surname" placeholder="Surname" />
+        </div>
+      </section>
+
+      <section class="email_section">
+        <label for="mail">Email</label>
+        <input type="email" name="" id="mail" placeholder="Email" />
+      </section>
+
+      <section class="gender_section">
+        <label>Gender</label>
+
+        <label for="male" class="radio_elements">Male</label>
+        <input type="radio" name="auswahl_gender" id="male" />
+
+        <label for="female" class="radio_elements">Female</label>
+        <input type="radio" name="auswahl_gender" id="female" />
+
+        <label for="divers" class="radio_elements">Divers</label>
+        <input type="radio" name="auswahl_gender" id="divers" />
+      </section>
+
+      <section class="file__section">
+        <div>
+          <label for="file">Picture</label>
+          <input type="file" name="" id="file" />
+        </div>
+      </section>
+
+      <section class="country_section">
+        <label for="country">Country</label>
+        <select name="" id="country">
+          <option value="ger">Germany</option>
+          <option value="other">Any other country</option>
+        </select>
+      </section>
+
+      <section class="languages__section">
+        <div>
+          <label for="languages">Preferred languages</label>
+          <select name="" id="languages" multiple size="4">
+            <option value="html">HTML</option>
+            <option value="css">Css</option>
+            <option value="js">JS</option>
+            <option value="react">React</option>
+          </select>
+        </div>
+      </section>
+
+      <section class="activity_section">
+        <label>Field of activity</label>
+
+        <input type="checkbox" name="" id="it" value="it" />
+        <label for="it" class="radio_elements">IT</label>
+
+        <input type="checkbox" id="design" name="" value="design" />
+        <label for="design" class="radio_elements">Design</label>
+
+        <input type="checkbox" id="other" name="" value="other" />
+        <label for="other" class="radio_elements">Other</label>
+      </section>
+
+      <section class="button__section">
+        <div>
+          <button id="send__btn">Send</button>
+          <button id="cancel__btn">Cancel</button>
+        </div>
+      </section>
+    </fieldset>
+  </body>
+</html>
