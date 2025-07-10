@@ -11,26 +11,66 @@ html {
 body {
   margin: 10vh 30vw;
   text-align: center;
-}
 
 fieldset {
-  border: solid 2px red;
+  height: 360px;
+  width: 300px;
+}
+
+fieldset, input, button {
+  background-color: darkslategrey;
+  color: white;
 }
 
 section {
   margin: 10px 0;
 }
 
-/*
-#signup__btn {
-  background-color: black;
+h2 {
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+#login__btn, #signup_btn {
+  width: 45%;
+  height: 40px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+.name_section input {
+  width: 47%;
+  height: 40px;
+}
+
+#mail, #password, #login, #started_btn {
+    width: 94%;
+  height: 40px;
+}
+
+
+#login__btn {
+  background-color: darkslategrey;
   border: none;
   color: white;
 }
 
-#signup__btn:hover {
+#login__btn:hover {
   background-color: greenyellow;
   border: white;
   color: white;
+  cursor: pointer;
 }
-+/
+
+#signup_btn, #started_btn {
+  background-color: #3cb371;
+}
+
+#started_btn {
+  letter-spacing: 3px;
+  word-spacing: 8px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
