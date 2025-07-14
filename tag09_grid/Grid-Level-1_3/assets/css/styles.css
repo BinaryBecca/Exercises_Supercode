@@ -1,0 +1,47 @@
+/*
+- Verwende unter anderem die Befehle:
+    - grid-template-columns
+    - grid-template-rows
+    - grid-column
+    - grid-row
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-size: 20px;
+  color: white;
+  margin: 20px;
+  display: grid;
+  grid-template-columns: 2fr 6fr;
+  grid-template-rows: 1fr 8fr 1fr;
+  grid-template-areas:
+    "header header"
+    "aside main"
+    "footer footer";
+}
+
+header {
+  background-color: blue;
+  grid-area: header;
+}
+
+aside {
+  background-color: green;
+  grid-area: aside;
+}
+
+main {
+  background-color: red;
+  grid-area: main;
+}
+
+footer {
+  background-color: rebeccapurple;
+  grid-area: footer;
+}

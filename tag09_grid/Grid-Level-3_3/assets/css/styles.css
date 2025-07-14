@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 20px;
+}
+
+@font-face {
+  font-family: "Cormorant Garamond";
+  src: url("../fonts/CormorantGaramond-VariableFont_wght.ttf");
+}
+
+/* ---------------- Display Body_grid ---------------- */
+
+body {
+  height: 100vh;
+  margin: 20px;
+  font-family: "Cormorant Garamond", Arial, Helvetica, sans-serif;
+  color: black;
+  background-color: #e9e9e0;
+
+  display: grid;
+  grid-template-columns: 8fr 2fr;
+  grid-template-rows: 160px 8fr;
+  grid-template-areas:
+    "header header"
+    "main aside";
+}
+
+header {
+  grid-area: header;
+  /* background-color: rgba(255, 0, 0, 0.171); */
+}
+main {
+  grid-area: main;
+  /* background-color: rgba(0, 0, 255, 0.38); */
+}
+aside {
+  grid-area: aside;
+  /* background-color: rgba(255, 255, 0, 0.235); */
+}
+
+/* ---------------- Styling Header_flex ---------------- */
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+header p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+  /* !!!! ohne width: 100% keine border bis zum Rand : )!!!! */
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 400px;
+}
+
+/* ---------------- Styling aside_grid ---------------- */
+
+aside {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 5vh 1fr 1fr 1fr;
+  grid-template-areas:
+    "title"
+    "sponsor1"
+    "sponsor2"
+    "sponsor3";
+  gap: 30px;
+  margin: 30px 10px 10px 10px;
+}
+
+aside h4 {
+  display: grid;
+  text-align: center;
+  grid-area: title;
+  font-size: 1.8vw;
+}
+
+.sponsor1 {
+  grid-area: sponsor1;
+  font-size: 70px;
+  font-weight: bold;
+}
+
+.sponsor2 {
+  grid-area: sponsor2;
+  padding: 20px;
+}
+
+.sponsor2 h4 {
+  font-size: 2vw;
+  font-weight: bold;
+}
+
+.sponsor2 p {
+  font-size: 1.5vw;
+}
+
+.sponsor2 p:nth-of-type(2) {
+  font-size: 2vw;
+  color: #737880;
+  text-decoration: underline;
+  text-underline-offset: 15px;
+  /* ! Abstand zum Unterstrichenem */
+}
+
+.sponsor3 {
+  grid-area: sponsor3;
+}
+
+/* ------------- Styling aside .sponsor_flex ------------- */
+
+.sponsor1,
+.sponsor2,
+.sponsor3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 7px solid black;
+}
+
+.sponsor3 img {
+  width: 80%;
+  height: 80%;
+}

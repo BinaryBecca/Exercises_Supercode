@@ -115,8 +115,11 @@ p {
 .buttons {
   display: flex;
   justify-content: center;
-  cursor: pointer;
   gap: 5px;
+}
+
+.buttons a {
+  text-decoration: none;
 }
 
 .buttons a:nth-of-type(1) button {
