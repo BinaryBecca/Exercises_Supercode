@@ -2,7 +2,7 @@
 main {
   display: grid;
   grid-template-columns: 1fr 1fr 2fr;
-  grid-template-rows: 80px 1fr 2fr 3fr;
+  grid-template-rows: 90px 1fr 2fr 3fr;
   grid-template-areas:
     "headline headline headline"
     "article1 article2 image"
@@ -15,6 +15,8 @@ main {
   font-size: 2vw;
   font-weight: bold;
   text-align: center;
+  margin-top: 20px;
+  margin-bottom: 60px;
 }
 
 .article1 {
@@ -41,12 +43,14 @@ main {
 }
 
 .image img {
+  grid-column: 3 / 4;
+  grid-row: 2 / 4;
   width: 90%;
-  height: 80%;
 }
 
 .image p {
   font-style: italic;
+  font-size: 1vw;
 }
 
 .text {
