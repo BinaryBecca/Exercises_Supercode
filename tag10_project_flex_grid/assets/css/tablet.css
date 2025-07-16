@@ -1,0 +1,29 @@
+@media only screen and (min-width: 768px) {
+  /* --------Article1--------- */
+
+  .heading {
+    bottom: 42%;
+  }
+
+  .dropdown,
+  .cards,
+  .article3_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0.5rem;
+  }
+
+  /* --------Article2 background--------- */
+
+  .background2 {
+    display: none;
+  }
+
+  .article2_text,
+  .article3_text {
+    text-align: center;
+    margin: 0 5rem;
+  }
+}

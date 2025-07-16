@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 20px;
+  scroll-behavior: smooth;
+}
+
+main section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+}
+
+#page1 {
+  background-color: #b96b6b;
+  height: 100vh;
+}
+
+#page2 {
+  background-color: #fff9c4;
+  height: 100vh;
+}
+
+#page3 {
+  background-color: #cce4f6;
+  height: 100vh;
+}
+
+.updown {
+  animation: updown 2s linear infinite alternate;
+}
+
+@keyframes updown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(25px);
+    opacity: 1%;
+  }
+}
+
+.updown:hover {
+  animation-play-state: paused;
+}

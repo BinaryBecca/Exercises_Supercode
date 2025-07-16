@@ -1,0 +1,59 @@
+.animate {
+  background-color: beige;
+  height: 400px;
+  width: 400px;
+}
+
+.animate div {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.balls {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.ball1 {
+  background-color: red;
+  animation: sectionAnimate 8s 0s linear infinite normal;
+}
+
+.ball2 {
+  background-color: red;
+  animation: sectionAnimate 8s 2s linear infinite normal;
+}
+
+.ball3 {
+  background-color: red;
+  animation: sectionAnimate 8s 4s linear infinite normal;
+}
+
+.ball4 {
+  background-color: red;
+  animation: sectionAnimate 8s 6s linear infinite normal;
+}
+
+@keyframes sectionAnimate {
+  0%,
+  100% {
+    background-color: red;
+  }
+
+  25% {
+    background-color: yellow;
+    transform: translateX(350px);
+  }
+
+  50% {
+    background-color: green;
+    transform: translate(350px, 350px);
+  }
+
+  75% {
+    background-color: blue;
+    transform: translateY(350px);
+  }
+}

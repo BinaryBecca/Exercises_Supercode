@@ -1,0 +1,39 @@
+@media only screen and (min-width: 992px) {
+  /* --------HEADER--------- */
+  .burger-wrapper {
+    display: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+  }
+
+  nav ul li:hover {
+    font-weight: bold;
+    text-decoration: underline grey;
+    text-underline-offset: 10px;
+  }
+
+  .heading {
+    left: 20%;
+    bottom: 32%;
+  }
+
+  /* --------Article2 background--------- */
+  .background2 {
+    display: flex;
+    position: absolute;
+    width: 20%;
+    left: 0;
+    top: 1%;
+    z-index: -1;
+  }
+}

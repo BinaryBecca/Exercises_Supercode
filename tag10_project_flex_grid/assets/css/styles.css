@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 20px;
+}
+
+@font-face {
+  font-family: "Urbanist";
+  src: url("../fonts/Urbanist.ttf");
+}
+
+body {
+  font-family: "Urbanist", Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+/* --------HEADER--------- */
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 2vh 4vw 20px 4vw;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  border-radius: 60px;
+  width: 100%;
+  padding: 0.5rem 1rem;
+}
+
+nav ul {
+  display: none;
+}
+
+.burger-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+}
+
+.burger {
+  height: 3px;
+  width: 25px;
+  margin: 3px;
+  border-radius: 5px;
+  background-color: black;
+}
+
+/* --------Article1 heading--------- */
+
+.article1 {
+  position: relative;
+  background: url("../img/background/background.png") center/contain no-repeat;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 20vh;
+}
+
+.heading {
+  position: absolute;
+  text-align: center;
+  bottom: 45%;
+  left: 15%;
+}
+
+.heading h1 {
+  font-weight: bold;
+  font-size: 8vw;
+}
+
+/* --------Article1 dropdown--------- */
+
+.dropdown {
+  position: absolute;
+}
+
+.dropdown-style {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.dropdown_element {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  border: 1px solid black;
+  border-radius: 60px;
+  width: 300px;
+  height: 50px;
+  font-size: 0.9rem;
+  background-color: white;
+  box-shadow: inset -3px -3px 2px rgba(0, 0, 0, 0.219);
+  /*! Schatten in Box: inset*/
+}
+
+.dropdown select {
+  border: transparent;
+}
+
+.dropdown select:hover,
+button:hover {
+  cursor: pointer;
+}
+
+#button {
+  background-color: #a9cba6;
+  color: white;
+}
+
+/* --------Article2 + 3 background--------- */
+
+.article2,
+.article3 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 20vh;
+}
+
+.background2,
+.background3 {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.article2_text,
+.article3_text {
+  text-align: center;
+  margin: 0 1rem;
+}
+
+.article2_text h2,
+.article3_text h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* --------Article2 cards--------- */
+
+.cards {
+  display: grid;
+  gap: 1rem;
+}
+
+.card_element {
+  border: 2px solid black;
+  height: 300px;
+  width: 250px;
+  border-radius: 16px;
+  background-color: white;
+  box-shadow: inset -3px -3px 2px rgba(0, 0, 0, 0.219);
+  text-align: center;
+  line-height: 1.5;
+}
+
+.card_element h4 {
+  font-size: 1.2rem;
+}
+
+#button2,
+.button3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 60px;
+  width: 300px;
+  height: 50px;
+  background-color: #a9cba6;
+  color: white;
+  font-size: 0.9rem;
+  box-shadow: inset -3px -3px 2px rgba(0, 0, 0, 0.219);
+}
+
+#button2 img:last-of-type {
+  opacity: 0;
+}
+
+/* --------Article3 element--------- */
+
+.article3_cards {
+  display: grid;
+  gap: 1rem;
+}
+
+.article3 .camper {
+  background-color: white;
+  width: 350px;
+}
+
+.article3_element {
+  height: 540px;
+  width: 350px;
+  border-radius: 16px;
+  background-color: #f0cea0;
+  box-shadow: inset -3px -3px 2px rgba(0, 0, 0, 0.219);
+  text-align: center;
+  line-height: 1.5;
+}
+
+.article3_cards ul li {
+  list-style: none;
+}
+
+.button-white {
+  background-color: white;
+  color: black;
+}
