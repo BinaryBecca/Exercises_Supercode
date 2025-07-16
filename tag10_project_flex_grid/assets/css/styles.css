@@ -26,7 +26,7 @@ header {
   padding: 2vh 4vw 20px 4vw;
 }
 
-nav {
+header nav {
   display: flex;
   justify-content: space-between;
   border: 1px solid black;
@@ -214,6 +214,7 @@ button:hover {
   width: 350px;
   border-radius: 16px;
   background-color: #f0cea0;
+  border: 1px solid black;
   box-shadow: inset -3px -3px 2px rgba(0, 0, 0, 0.219);
   text-align: center;
   line-height: 1.5;
@@ -226,4 +227,38 @@ button:hover {
 .button-white {
   background-color: white;
   color: black;
+}
+
+main {
+  border-bottom: 2px solid black;
+}
+
+/* --------Footer--------- */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 20vh;
+}
+
+footer nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  gap: 1vh;
+}
+
+footer nav ul a {
+  text-decoration: none;
+  color: black;
+}
+
+.socialmedia img {
+  margin: 1rem;
+  width: 2.5rem;
 }
