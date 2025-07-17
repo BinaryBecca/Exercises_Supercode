@@ -26,6 +26,12 @@
     text-align: center;
     margin: 0 5rem;
   }
+
+  .article3_element {
+    width: 380px;
+    height: 600px;
+  }
+
   /* --------Footer--------- */
 
   footer nav ul {

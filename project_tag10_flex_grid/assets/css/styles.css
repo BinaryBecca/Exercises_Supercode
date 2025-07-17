@@ -204,29 +204,59 @@ button:hover {
   gap: 1rem;
 }
 
-.article3 .camper {
-  background-color: white;
-  width: 350px;
-}
-
 .article3_element {
-  height: 540px;
-  width: 350px;
+  width: 100%;
+  max-width: 380px;
+  height: 600px;
   border-radius: 16px;
   background-color: #f0cea0;
   border: 1px solid black;
   box-shadow: inset -3px -3px 2px rgba(0, 0, 0, 0.219);
-  text-align: center;
   line-height: 1.5;
 }
 
-.article3_cards ul li {
+.article3_image {
+  background-color: white;
+  border-radius: 16px 16px 0 0;
+}
+
+.article3_price,
+.article3_element ul,
+.article3_button {
+  padding: 5px 30px;
+}
+
+.article3_price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.article3_price h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.article3_price h2 span {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.article3_element ul li {
   list-style: none;
+}
+
+.article3_element ul img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+  margin-right: 10px;
 }
 
 .button-white {
   background-color: white;
   color: black;
+  margin-bottom: 10px;
 }
 
 main {
