@@ -1,0 +1,9 @@
+#formFeld {
+  padding: 50px;
+}
+
+#result {
+  padding: 0 50px;
+  font-weight: bold;
+  font-size: 30px;
+}
