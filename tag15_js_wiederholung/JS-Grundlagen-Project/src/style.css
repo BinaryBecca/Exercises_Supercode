@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#formFeld {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 10%;
+  width: 200px;
+  height: 150px;
+  background-color: white;
+}
+
+input,
+button {
+  width: 180px;
+}
+
+button {
+  background-color: lime;
+}
+
+div:first-of-type {
+  font-size: 20px;
+}
