@@ -118,6 +118,11 @@ footer {
   background-color: var(--color_bl);
   color: var(--color_wh);
   width: 100%;
+}
+
+#californiaSection,
+#goldenBearSection,
+#spinningLogo {
   padding: 5rem 0 5rem 5rem;
 }
 
@@ -319,6 +324,7 @@ h2 {
 
 /* #poppyBearSection */
 #poppyBearSection {
+  z-index: 1;
   margin-top: 10rem;
   padding: 5rem;
 }
@@ -359,11 +365,109 @@ h2 {
 
 .poppyBearImg1 {
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   left: 3rem;
 }
 
 .poppyBearImg2 {
   position: relative;
-  z-index: 1;
+  z-index: 2;
+}
+
+/* #footer */
+
+footer {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 2rem 5rem;
+}
+
+.footerTop,
+.footerBottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10rem;
+}
+
+.footerBottom {
+  margin-right: 10rem;
+}
+
+.footerTextLeft {
+  margin-top: 10rem;
+}
+
+.footerTextLeft h4 {
+  font-family: var(--font_int);
+  font-size: var(--size_steak_medium);
+  margin-bottom: 2rem;
+  width: 60%;
+  line-height: 1.4;
+}
+
+.footerTextLeft p {
+  margin-bottom: 2rem;
+}
+
+.footerSocialMedia {
+  line-height: 1.8;
+}
+
+/* #Animation footer */
+
+.footerAnimation {
+  position: relative;
+}
+
+/* Auto layout figma*/
+.whiteStripe {
+  display: flex;
+  align-items: flex-start;
+  padding: 16px 0px;
+
+  position: absolute;
+  width: 1200px;
+  height: 102px;
+  top: 0;
+  right: -400px;
+  /* right: -421.17px;
+  top: -139.3px; */
+
+  background: #ffffff;
+  transform: rotate(45deg);
+}
+
+/* 2019 JUNE 21, 2019 JUNE */
+.whiteStripe p {
+  width: 1200px;
+  height: 70px;
+
+  font-family: var(--font_lor);
+  font-weight: 600;
+  font-size: 88px;
+  line-height: 70px;
+
+  /* border: 5px solid red; */
+  color: #000;
+  transform: rotate(360deg);
+
+  animation: jump-pizza 3s linear infinite alternate;
+}
+
+@keyframes jump-pizza {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(300px);
+  }
+}
+
+.whiteStripe p span {
+  -webkit-text-stroke: 1px black;
+  color: transparent;
 }
