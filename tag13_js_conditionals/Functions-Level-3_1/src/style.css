@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+body h2 {
+  font-weight: bold;
+  margin: 20px 0 60px 0;
+}
+
+.positionBalls {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.ball {
+  border: 1px solid black;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  transform: rotate(45deg);
+}
+
+.ballOne {
+  background-image: linear-gradient(purple 50%, green 50%);
+}
+
+.ballTwo {
+  background-image: linear-gradient(yellow 50%, darkorchid 50%);
+}
+
+.ballThree {
+  background-image: linear-gradient(orange 50%, brown 50%);
+}
+
+.ballFour {
+  background-image: linear-gradient(lightblue 50%, rebeccapurple 50%);
+}
