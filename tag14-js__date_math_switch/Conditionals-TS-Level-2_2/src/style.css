@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+body div {
+  width: 600px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-grow: 0.3;
+}
+
+body div label,
+.levelOf p {
+  /* border: 1px solid black; */
+  width: 600px;
+}
+
+.levelOf p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.levelOf {
+  text-align: left;
+}
+#points {
+  width: 600px;
+}
