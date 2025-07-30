@@ -33,6 +33,11 @@ body div label,
 .levelOf {
   text-align: left;
 }
+
 #points {
   width: 600px;
+}
+
+#points:hover {
+  cursor: pointer;
 }
