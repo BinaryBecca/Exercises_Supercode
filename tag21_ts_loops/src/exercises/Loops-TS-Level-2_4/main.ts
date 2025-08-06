@@ -12,10 +12,3 @@ function addToFifty(): void {
 }
 
 addToFifty()
-
-//   for (let i = 1; i <= 10; i++) {
-//     console.log(Math.random() + i)
-//   }
-//   if ((Math.random() + i) < 50) {
-//     "Stopping right here."
-//   }
