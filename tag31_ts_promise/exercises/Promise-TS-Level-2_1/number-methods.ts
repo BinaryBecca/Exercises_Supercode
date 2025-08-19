@@ -1,6 +1,6 @@
 const math: Promise<number[]> = new Promise((resolve, reject) => {
-  // const randomNumber = Math.floor(Math.random() * 130) + 1
   let numberArray: number[] = []
+
   for (let i = 0; i < 3; i++) {
     const randomNumber = Math.floor(Math.random() * 130) + 1
     numberArray.push(randomNumber)
@@ -13,7 +13,7 @@ const math: Promise<number[]> = new Promise((resolve, reject) => {
   }
 
   console.log("Original-Array", numberArray)
-
+  // Alternative:
   // numberArray.forEach((num: number) => {
   //   if (num > 100) {
   //     reject("Werte sind höher als 100")
@@ -29,13 +29,17 @@ const math: Promise<number[]> = new Promise((resolve, reject) => {
 // function myFunction(num) {
 //   return num * 10;
 // }
+
+const allArrays: number[][] = []
+
 math
   .then((addingStuffToArray: number[]) => {
     const addingSevenToArray = addingStuffToArray.map(addingSeven)
     function addingSeven(num) {
       return num + 7
     }
-    console.log(addingSevenToArray)
+    // console.log(addingSevenToArray)
+    allArrays.push(addingSevenToArray)
     return addingSevenToArray
   })
 
@@ -44,7 +48,8 @@ math
     function multiplyTwo(num) {
       return num * 2
     }
-    console.log(multiplyTwoToArray)
+    // console.log(multiplyTwoToArray)
+    allArrays.push(multiplyTwoToArray)
     return multiplyTwoToArray
   })
 
@@ -53,7 +58,8 @@ math
     function substractingOne(num) {
       return num - 1
     }
-    console.log(substractingOneToArray)
+    // console.log(substractingOneToArray)
+    allArrays.push(substractingOneToArray)
     return substractingOneToArray
   })
 
@@ -62,13 +68,14 @@ math
     function moduloTwo(num) {
       return num % 2
     }
-    console.log(moduloTwoToArray)
+    // console.log(moduloTwoToArray)
+    allArrays.push(moduloTwoToArray)
     return moduloTwoToArray
   })
 
-  .then((addingStuffToArray) => {
-    console.log("All Arrays: ", addingStuffToArray)
-    return addingStuffToArray
+  .then(() => {
+    console.log("All Arrays: ", allArrays)
+    return allArrays
   })
   .catch((err) => console.error(err))
   .finally(() => {
