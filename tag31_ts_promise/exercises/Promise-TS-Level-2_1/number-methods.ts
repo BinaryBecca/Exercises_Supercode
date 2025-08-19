@@ -81,5 +81,3 @@ math
   .finally(() => {
     console.log("Finished")
   })
-
-// #Problem: nur modulo wird angezeigt...
