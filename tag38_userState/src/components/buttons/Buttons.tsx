@@ -18,7 +18,7 @@ export default function Buttons() {
         <>
           <div className="bg-white h-[1px]"></div>
 
-          <div className="flex flex-row items-center justify-between bg-red-100 text-red-700 p-5 w-200">
+          <div className="flex flex-row items-center justify-between bg-rosa text-red-700 p-5 w-200">
             Fast learning curve
             <button
               onClick={() => setclickSecondButton(!clickSecondButton)}
