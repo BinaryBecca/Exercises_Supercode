@@ -3,8 +3,8 @@ import { NavLink, useLocation } from "react-router"
 
 export default function Header() {
   const location = useLocation()
-  console.log(location)
-  console.log(location.pathname)
+  // console.log(location)
+  // console.log(location.pathname)
 
   return (
     <>
