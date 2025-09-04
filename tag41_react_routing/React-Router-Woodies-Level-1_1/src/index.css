@@ -1,0 +1,16 @@
+@font-face {
+  font-family: Nunito;
+  src: url("../src/assets/fonts/Nunito-VariableFont_wght.ttf");
+}
+
+@import "tailwindcss";
+
+@theme {
+  --font-nunito: Nunito, "sans-serif";
+}
+
+:root {
+  --pink: #f9bdbd;
+  --yellow: #daa520;
+  --footerColour: #f1f1f1;
+}
