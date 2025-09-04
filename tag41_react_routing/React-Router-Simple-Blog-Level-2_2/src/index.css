@@ -1,1 +1,16 @@
+@font-face {
+  font-family: Roboto;
+  src: url("../src/assets/fonts/Roboto-Black.ttf");
+}
+
 @import "tailwindcss";
+
+@theme {
+  --font-roboto: Roboto, sans-serif;
+}
+
+:root {
+  font-size: 100%;
+  font-family: var(--font-roboto);
+  --buttonColor: #6fcf97;
+}
