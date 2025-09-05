@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+:root {
+  font-size: 100%;
+  background-color: rgba(102, 51, 153, 0.096);
+}
