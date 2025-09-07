@@ -7,7 +7,7 @@ type InputProps = {
   onchange: ChangeEventHandler<HTMLInputElement>
 }
 
-export default function Input({ text, value, onchange, unit }: InputProps) {
+export default function Input({ text, value, onchange }: InputProps) {
   return (
     <>
       <fieldset className="flex flex-col items-center border-1 border-black p-2 mt-5 w-150">
