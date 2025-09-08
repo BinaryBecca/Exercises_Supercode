@@ -8,25 +8,28 @@ function App() {
   const [celsius, setCelsius] = useState("")
   const [fahrenheit, setFahrenheit] = useState("")
 
-  const changingCelsius = (event) => {
+  const changingCelsius = (event: React.ChangeEvent<HTMLInputElement>) => {
+    console.log(event)
+    console.log(event.target.value)
     const celsiusValue = event.target.value
     setCelsius(celsiusValue)
 
     const fahrenheitValue = celsiusToFahrenheit(Number(celsiusValue))
-    setFahrenheit(Number(fahrenheitValue))
+    setFahrenheit(String(fahrenheitValue))
   }
 
-  const changingFahrenheit = (event) => {
+  const changingFahrenheit = (event: React.ChangeEvent<HTMLInputElement>) => {
     const fahrenheitValue = event.target.value
     setFahrenheit(fahrenheitValue)
 
     const celsiusValue = fahrenheitToCelsius(Number(fahrenheitValue))
-    setCelsius(Number(celsiusValue))
+    setCelsius(String(celsiusValue))
   }
 
   return (
     <>
       <div className="flex flex-col items-center justify-center gap-5">
+        {/* onchange: React.ChangeEventHandler<HTMLInputElement> */}
         <Input text="Celsius" value={celsius} onchange={changingCelsius} />
         <Input text="Fahrenheit" value={fahrenheit} onchange={changingFahrenheit} />
 

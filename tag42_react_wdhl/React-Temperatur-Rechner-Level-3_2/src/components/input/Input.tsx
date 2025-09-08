@@ -1,10 +1,8 @@
-import React, { type ChangeEventHandler } from "react"
-
 type InputProps = {
   text: string
   // value: number
   value: string
-  onchange: ChangeEventHandler<HTMLInputElement>
+  onchange: React.ChangeEventHandler<HTMLInputElement>
 }
 
 export default function Input({ text, value, onchange }: InputProps) {
